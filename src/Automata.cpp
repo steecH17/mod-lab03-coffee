@@ -1,8 +1,10 @@
 // Copyright 2022 UNN-IASR
 #include "Automata.h"
+#include <iostream>
+#include <string>
 
 STATES Automata::getState() { 
-    return state; 
+    return state;
 }
 
 void Automata::getMenu() {
