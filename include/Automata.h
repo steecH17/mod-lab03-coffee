@@ -1,15 +1,15 @@
 // Copyright 2022 UNN-IASR
 #ifndef INCLUDE_AUTOMATA_H_
 #define INCLUDE_AUTOMATA_H_
+#include <unistd.h>
 #include <iostream>
 #include <string>
-#include <unistd.h>
 #include <vector>
 
 enum STATES { OFF, WAIT, ACCEPT, CHECK, COOK };
 
 class Automata {
-public:
+ public:
   void on();
   void off();
   void coin(int money);
@@ -27,7 +27,7 @@ public:
     prices = {130, 100, 110, 90, 80};
   }
 
-private:
+ private:
   int cash;
   std::vector<std::string> menu;
   std::vector<int> prices;

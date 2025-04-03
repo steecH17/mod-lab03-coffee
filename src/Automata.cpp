@@ -1,6 +1,9 @@
+// Copyright 2022 UNN-IASR
 #include "Automata.h"
 
-STATES Automata::getState() { return state; }
+STATES Automata::getState() { 
+    return state; 
+}
 
 void Automata::getMenu() {
   if (state != OFF) {
