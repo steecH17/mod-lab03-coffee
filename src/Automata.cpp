@@ -3,9 +3,7 @@
 #include <iostream>
 #include <string>
 
-STATES Automata::getState() { 
-    return state;
-}
+STATES Automata::getState() { return state; }
 
 void Automata::getMenu() {
   if (state != OFF) {
