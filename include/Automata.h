@@ -3,13 +3,13 @@
 #define INCLUDE_AUTOMATA_H_
 #include <iostream>
 #include <string>
-#include <vector>
 #include <unistd.h>
+#include <vector>
 
 enum STATES { OFF, WAIT, ACCEPT, CHECK, COOK };
 
 class Automata {
- public:
+public:
   void on();
   void off();
   void coin(int money);
@@ -27,7 +27,7 @@ class Automata {
     prices = {130, 100, 110, 90, 80};
   }
 
- private:
+private:
   int cash;
   std::vector<std::string> menu;
   std::vector<int> prices;
@@ -39,4 +39,4 @@ class Automata {
   void writeBalance();
   bool isDrinkInMenu(std::string drinkName);
 };
-#endif  // INCLUDE_AUTOMATA_H_
+#endif // INCLUDE_AUTOMATA_H_
